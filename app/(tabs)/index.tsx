@@ -14,7 +14,7 @@ export default function TabOneScreen() {
         accessibilityLabel="logo"
         accessible
       />
-      <Text style={styles.title}>Galaxies Feed</Text>
+      <Text style={styles.title}>Galaxies Home</Text>
       <View style={styles.separator} testID="separator" />
       <View style={{ flexDirection: 'row', marginHorizontal: 40 }}>
         <TextInput
@@ -24,7 +24,11 @@ export default function TabOneScreen() {
           onChangeText={(text) => setSearch(text)}
         />
       </View>
-      {search !== '' && <Text style={{ fontSize: 16, marginTop: 20 }}>Searched for: {search}</Text>}
+      {search !== '' && (
+        <Text style={{ fontSize: 16, marginTop: 20 }}>
+          Searched for: {search}
+        </Text>
+      )}
       <GalacticCounter />
     </View>
   );
