@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react-native';
+import { fireEvent, render, screen } from '@testing-library/react-native';
 
 import TabOneScreen from '@/app/(tabs)';
 
@@ -27,5 +27,17 @@ describe('<TabOneScreen />', () => {
     const separator = screen.getByTestId('separator');
 
     expect(separator).toBeTruthy();
+  });
+
+  test('shows the search input', () => {
+    render(<TabOneScreen />);
+    const search = 'My search string';
+
+    fireEvent.changeText(
+      screen.getByPlaceholderText('Search galaxies'),
+      search
+    );
+
+    expect(screen.getByDisplayValue(search)).toBeTruthy();
   });
 });
