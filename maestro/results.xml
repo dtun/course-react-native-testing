@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="iPhone SE (3rd generation) - iOS 17.2 - BBACD1FF-7B15-4AFF-B5E1-75C837751471" tests="1" failures="0" time="7">
+    <testcase id="test-app" name="test-app" classname="test-app" time="7" status="SUCCESS"/>
+  </testsuite>
+</testsuites>
