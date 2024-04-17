@@ -2,7 +2,6 @@
 
 exports[`App renders Tab 1 correctly 1`] = `
 <View
-  accessible={true}
   style={
     {
       "alignItems": "center",
